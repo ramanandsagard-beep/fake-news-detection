@@ -1,0 +1,42 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.0, pytest-9.1.1, pluggy-1.6.0
+rootdir: c:\Users\SAGAR\Downloads\ml project\fake-news-detection\backend
+plugins: anyio-4.15.1, asyncio-1.4.0
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 3 items
+
+tests\test_api.py ...                                                    [100%]
+
+============================== warnings summary ===============================
+app\schemas\dataset.py:5
+  c:\Users\SAGAR\Downloads\ml project\fake-news-detection\backend\app\schemas\dataset.py:5: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class DatasetUploadResponse(BaseModel):
+
+app\schemas\training.py:11
+  c:\Users\SAGAR\Downloads\ml project\fake-news-detection\backend\app\schemas\training.py:11: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class TrainingRunResponse(BaseModel):
+
+app\schemas\training.py:25
+  c:\Users\SAGAR\Downloads\ml project\fake-news-detection\backend\app\schemas\training.py:25: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.13/migration/
+    class ModelRegistryResponse(BaseModel):
+
+app\main.py:29
+  c:\Users\SAGAR\Downloads\ml project\fake-news-detection\backend\app\main.py:29: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+..\..\.venv\Lib\site-packages\fastapi\applications.py:4681
+  c:\Users\SAGAR\Downloads\ml project\.venv\Lib\site-packages\fastapi\applications.py:4681: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)  # ty: ignore[deprecated]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 3 passed, 5 warnings in 3.06s ========================
