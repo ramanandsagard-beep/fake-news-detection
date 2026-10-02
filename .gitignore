@@ -17,11 +17,12 @@ dist/
 .env.test.local
 .env.production.local
 
-# ML Models & Uploads
+# ML Models, Uploads & Datasets
 backend/trained_models/
 backend/uploads/
 trained_models/
 uploads/
+data/*.csv
 
 # IDE & OS
 .vscode/
